@@ -1,0 +1,16 @@
+package Stream;
+
+import java.util.Arrays;
+
+public class Ex1 {
+	public static void main(String[] args) {
+		int[] numbers = new int[] {1,2,3,4};
+		System.out.println(Arrays.toString(numbers));
+	}
+	
+	class solution {
+		public int[] Solution(int[] numbers) {
+			return Arrays.stream(numbers).map(i -> i*2).toArray();
+		}
+	}
+}
